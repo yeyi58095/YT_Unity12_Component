@@ -593,6 +593,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &515441253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8915946573133884798, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
+  m_PrefabInstance: {fileID: 7969270523869939915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &811594836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1091,7 @@ GameObject:
   - component: {fileID: 1714359913}
   - component: {fileID: 1714359912}
   - component: {fileID: 1714359911}
+  - component: {fileID: 1714359914}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1132,6 +1138,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714359914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714359910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff57a588731485d48b25137efbe811f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1831674832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 6631043863697716894, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1301,6 +1323,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6631043863697716894, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7969270523869939917}
+    - targetCorrespondingSourceObject: {fileID: 6631043863697716894, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7969270523869939922}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
 --- !u!1 &7969270523869939916 stripped
 GameObject:
@@ -1323,6 +1348,20 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &7969270523869939922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969270523869939916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c3a8e38ac6357449061228226c9552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 515441253}
+  Prefab: {fileID: 6631043863697716894, guid: 2a3d2fcb0d6cbbc468401efafd814b29, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
